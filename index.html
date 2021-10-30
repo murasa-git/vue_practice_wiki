@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>kiso_vue</title>
+  <!--<link href="main.css" rel="stylesheet">-->
+</head>
+<body>
+  <div id="app">
+    <p>hello, world!</p><br>
+    <p>hoge: {{ hoge }} </p><br>
+
+    <!-- v-if -->
+    <p v-if="isAvailable"> if true, you can see me</p>
+
+    <!-- v-bind -->
+    <a v-bind:href="url">this is a tag </a>
+
+    <!-- js test -->
+    <p>{{ 2+3*5 }}</p>
+    <p>{{ isAvailable ? "yes":"no"}}</p>
+
+  </div>
+    <script src="https://unpkg.com/vue@next"></script>
+  <script src="./main.js"></script>
+  <script src="./sub.js"></script>
+</body>
+</html>
